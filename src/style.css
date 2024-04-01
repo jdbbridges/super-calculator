@@ -84,10 +84,10 @@ h2.displayback {
     content: "88888888"; 
     position: absolute;
     color: rgba(15,56,15,0.1);
-    margin: -23.5px 0px 0px 9px;
+    margin: -23.5px 0px 0px -20.5px;
 } 
 
-div.body { 
+div.calculator-body { 
     background:
         linear-gradient(rgba(188,190,188,0.8), rgba(178,180,178,0.8)),
         url('noise.svg');
@@ -171,11 +171,12 @@ div.screen-background {
   .button-black {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 1px 0 0 rgb(43,36,43);
-    color: rgba(223,216,223,1);
+    color: rgba(223,216,223,.8);
     width: 60px;
     height: 25px;
     border-radius: 0.7em;
-    border: 2px solid; 
+    border: 2px solid;
+    margin-top: 10px;
     cursor: pointer;
     text-align: center;
     text-decoration: none; 
@@ -189,13 +190,25 @@ div.screen-background {
 }
 
   .button-purple:hover {
-    box-shadow: rgba(240,240,240,.3) 0px 0px 10px 2px;
+    transform: scale(1.04);
   }
 
   .button-lav:hover {
-    box-shadow: rgba(240,240,240,.3) 0px 0px 10px 2px;
+    transform: scale(1.04);
   }
 
   .button-black:hover {
-    box-shadow: rgba(240,240,240,.3) 0px 0px 10px 2px;
+    transform: scale(1.04) rotate(325deg);
+  }
+
+  .button-purple:active {
+    transform: scale(0.96);
+  }
+
+  .button-lav:active {
+    transform: scale(0.96);
+  }
+
+  .button-black:active {
+    transform: scale(0.96) rotate(325deg);
   }

@@ -3,45 +3,53 @@
 <head>
   <title>Super Calculator</title>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
 <script src=""script.js"></script>
 
-<div class="body">
+<div class="calculator-body">
     <div>
         <h1 class="name">SUPER CALCULATOR</h1>
     </div>
     <div class="screen">
-        <h2 class="display">0</h2>
-        <h2 class="displayback">88888888</h2>
+        <h2 data-current-operand class="display">0</h2>
+        <h2 class="displayback">888888888</h2>
     </div>
     <div class="button-den">
         <table>
             <tr>
-                <td><button type="button" class="button-purple">7</button></td>
-                <td><button type="button" class="button-purple">8</button></td>
-                <td><button type="button" class="button-purple">9</button></td>
-                <td><button type="button" class="button-lav">+</button></td>
+                <td><button data-number type="button" class="button-purple">7</button></td>
+                <td><button data-number type="button" class="button-purple">8</button></td>
+                <td><button data-number type="button" class="button-purple">9</button></td>
+                <td><button data-operation type="button" class="button-lav">+</button></td>
             </tr>
             <tr>
-                <td><button type="button" class="button-purple">4</button></td>
-                <td><button type="button" class="button-purple">5</button></td>
-                <td><button type="button" class="button-purple">6</button></td>
-                <td><button type="button" class="button-lav">−</button></td>
+                <td><button data-number type="button" class="button-purple">4</button></td>
+                <td><button data-number type="button" class="button-purple">5</button></td>
+                <td><button data-number type="button" class="button-purple">6</button></td>
+                <td><button data-operation type="button" class="button-lav">−</button></td>
             </tr>
             <tr>
-                <td><button type="button" class="button-purple">1</button></td>
-                <td><button type="button" class="button-purple">2</button></td>
-                <td><button type="button" class="button-purple">3</button></td>
-                <td><button type="button" class="button-lav">×</button></td>
+                <td><button data-number type="button" class="button-purple">1</button></td>
+                <td><button data-number type="button" class="button-purple">2</button></td>
+                <td><button data-number type="button" class="button-purple">3</button></td>
+                <td><button data-operation type="button" class="button-lav">×</button></td>
             </tr>
             <tr>
-                <td><button type="button" class="button-black">c</button></td>
-                <td><button type="button" class="button-purple">0</button></td>
-                <td><button type="button" class="button-black">=</button></td>
-                <td><button type="button" class="button-lav">÷</button></td>
+                <td><button data-number type="button" class="button-lav">.</button></td>
+                <td><button data-number type="button" class="button-purple">0</button></td>
+                <td><button data-equals type="button" class="button-lav">=</button></td>
+                <td><button data-operation type="button" class="button-lav">÷</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button data-all-clear type="button" class="button-black">AC</button></td>
+                <td><button data-clear type="button" class="button-black">C</button></td>
             </tr>
         </table>
     </div>
